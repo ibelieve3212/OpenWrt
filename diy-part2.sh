@@ -20,5 +20,5 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 sed -i 's/OpenWrt/Gon-Lite/g' package/base-files/files/bin/config_generate
 
 # Modify kernel version
-sed -i 's/KERNELPATCHVER:=.*/KERNELPATCHVER:=5.4/' ./target/linux/x86/Makefile
+sed -i 's/KERNELPATCHVER:=6.1/KERNELPATCHVER:=5.4/' ./target/linux/x86/Makefile
 
