@@ -24,5 +24,4 @@
 #echo -i '$a src-git adguardhome https://github.com/rufengsuixing/luci-app-adguardhome.git' feeds.conf.default
 #echo -i '$a src-git zerotier https://github.com/rufengsuixing/luci-app-zerotier.git' feeds.conf.default
 #echo -i '$a src-git argon https://github.com/jerrykuku/luci-theme-argon.git' feeds.conf.default
-sed -i '$a src-git opluci https://github.com/openwrt/luci.git' feeds.conf.default
 sed -i '$a src-git immluci https://github.com/immortalwrt/luci.git' feeds.conf.default
