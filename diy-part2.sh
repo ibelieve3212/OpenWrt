@@ -20,7 +20,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-mod/g' feeds/luci/collections/lu
 sed -i 's/OpenWrt/Gon-Lite/g' package/base-files/files/bin/config_generate
 
 # Modify kernel version
-#sed -i 's/KERNELPATCHVER:=*.*/KERNELPATCHVER:=5.4/g' ./target/linux/x86/Makefile
+sed -i 's/KERNELPATCHVER:=*.*/KERNELPATCHVER:=5.4/g' ./target/linux/x86/Makefile
 sed -i 's/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=5.4/g' ./target/linux/x86/Makefile
 
 # 调整 ZeroTier 到 服务 菜单
