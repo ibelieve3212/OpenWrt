@@ -20,8 +20,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-mod/g' feeds/luci/collections/lu
 sed -i 's/OpenWrt/Gon-Lite/g' package/base-files/files/bin/config_generate
 
 # Modify kernel version
-sed -i 's/KERNELPATCHVER:=6.1/KERNELPATCHVER:=5.4/g' ./target/linux/x86/Makefile
-sed -i 's/KERNEL_TESTING_PATCHVER:=6.6/KERNEL_TESTING_PATCHVER:=5.4/g' ./target/linux/x86/Makefile
+sed -i 's/KERNELPATCHVER:=*.*/KERNELPATCHVER:=5.4/g' ./target/linux/x86/Makefile
+#sed -i 's/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=5.4/g' ./target/linux/x86/Makefile
 
 # 调整 ZeroTier 到 服务 菜单
 sed -i 's/vpn/services/g; s/VPN/Services/g' feeds/luci/applications/luci-app-zerotier/luasrc/controller/zerotier.lua
